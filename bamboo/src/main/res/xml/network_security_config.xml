@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 默认配置，明文通信，使用系统证书 -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- 仅仅信任系统-->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <!-- 自己服务器，使用https，将所有域名添加到此 -->
+<!--    <domain-config cleartextTrafficPermitted="true">-->
+<!--        <domain includeSubdomains="true">fengkongcloud.com</domain>-->
+<!--    </domain-config>-->
+    <!-- debug模式，可以使用用户自己安装的证书，比如charles抓包安装的证书，这个配置只在android:debuggable -->
+<!--    <debug-overrides>-->
+<!--        <trust-anchors>-->
+<!--            &lt;!&ndash; Trust user added CAs while debuggable only &ndash;&gt;-->
+<!--            <certificates src="system" />-->
+<!--            <certificates src="user" />-->
+<!--        </trust-anchors>-->
+<!--    </debug-overrides>-->
+
+</network-security-config>

@@ -1,0 +1,45 @@
+pluginManagement {
+    repositories {
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://developer.huawei.com/repo/" }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+enableFeaturePreview('VERSION_CATALOGS')
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://developer.huawei.com/repo/" }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+
+        google()
+        mavenCentral()
+
+    }
+    versionCatalogs {
+//        create("libs") {
+//            from files( "../gradle/libs.versions.toml")
+//        }
+    }
+}
+
+
+
+rootProject.name = "Bamboo"
+include ':app'
+include ':bamboo'

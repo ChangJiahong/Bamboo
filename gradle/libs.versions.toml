@@ -1,0 +1,91 @@
+[versions]
+#groovy = "3.0.5"
+#checkstyle = "8.37"
+#compilesdk = "30"
+#targetsdk = "30"
+
+[libraries]
+viewbinding = "androidx.databinding:viewbinding:7.4.2"
+databinding-runtime = "androidx.databinding:databinding-runtime:7.2.1"
+databinding-common = "androidx.databinding:databinding-common:7.4.2"
+databinding-adapters = "androidx.databinding:databinding-adapters:7.2.1"
+hi-dhl = "com.hi-dhl:binding:1.1.5"
+
+
+lifecycle-runtime = "androidx.lifecycle:lifecycle-runtime:2.5.0"
+lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.5.0"
+common-java8 = "androidx.lifecycle:lifecycle-common-java8:2.4.1"
+livedata-ktx = "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+viewmodel = "androidx.lifecycle:lifecycle-viewmodel:2.4.1"
+viewmodel-ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+viewmodel-savedstate = "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.4.1"
+
+activity-ktx = "androidx.activity:activity-ktx:1.2.2"
+fragment-ktx = "androidx.fragment:fragment-ktx:1.3.6"
+
+#消息通信
+eventbus = "org.greenrobot:eventbus:3.2.0"
+#状态栏工具
+immersionbar = "com.geyifeng.immersionbar:immersionbar:3.2.2"
+immersionbar-ktx = "com.geyifeng.immersionbar:immersionbar-ktx:3.2.2"
+
+#koin依赖注入
+koin-core = "io.insert-koin:koin-core:3.2.0"
+koin-android = "io.insert-koin:koin-android:3.2.0"
+koin-annotations = "io.insert-koin:koin-annotations:1.0.0"
+koin-compiler = "io.insert-koin:koin-ksp-compiler:1.0.0"
+
+#启动初始化框架
+startup-runtime = "androidx.startup:startup-runtime:1.1.1"
+
+arouter = "com.alibaba:arouter-api:1.5.2"
+arouter-compiler = "com.alibaba:arouter-compiler:1.5.2"
+
+gson = "com.google.code.gson:gson:2.8.5"
+
+retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
+retrofit_converter_moshi = "com.squareup.retrofit2:converter-moshi:2.9.0"
+retrofit_converter_gson = "com.squareup.retrofit2:converter-gson:2.9.0"
+logging_interceptor = "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
+#Moshi
+moshi = "com.squareup.moshi:moshi:1.8.0"
+moshi-kotlin = "com.squareup.moshi:moshi-kotlin:1.13.0"
+moshi-kotlin-codegen = "com.squareup.moshi:moshi-kotlin-codegen:1.8.0"
+
+[bundles]
+databinding = [
+    "databinding-runtime",
+    "databinding-common",
+    "databinding-adapters",
+    "hi-dhl"
+]
+lifecycle = [
+    "lifecycle-runtime",
+    "lifecycle-runtime-ktx",
+    "common-java8",
+    "livedata-ktx",
+    "viewmodel",
+    "viewmodel-ktx",
+    "viewmodel-savedstate"
+]
+immersionbar = [
+    "immersionbar",
+    "immersionbar-ktx"
+]
+koin = [
+    "koin-core",
+    "koin-android",
+    "koin-annotations"
+]
+retrofit = [
+    "retrofit_converter_moshi",
+    "logging_interceptor"
+]
+moshi = [
+    "moshi",
+    "moshi-kotlin"
+]
+
+[plugins]
+#jmh = { id = "me.champeau.jmh", version = "0.6.5" }
