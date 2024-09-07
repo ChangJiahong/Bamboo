@@ -1,4 +1,4 @@
-package cn.changjiahong.bamboo.base.event_bus
+package cn.changjiahong.bamboo.common.event_bus
 
 /**
  *
@@ -7,7 +7,7 @@ package cn.changjiahong.bamboo.base.event_bus
  */
 data class Event(val type: EventType, val data: Any)
 
-sealed interface EventType
+interface EventType
 
 enum class MsgEvent : EventType {
     UNREAD_COUNT

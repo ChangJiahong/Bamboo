@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Bamboo</string>
     <string name="hello_word">你好世界!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_device">添加设备</string>
 </resources>

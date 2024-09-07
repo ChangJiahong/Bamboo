@@ -10,7 +10,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import cn.changjiahong.bamboo.base.event_bus.Event
+import cn.changjiahong.bamboo.common.event_bus.Event
 import cn.changjiahong.bamboo.base.lan.LanguageManager
 import cn.changjiahong.bamboo.base.router.nav
 import cn.changjiahong.bamboo.base.router.navAndClear

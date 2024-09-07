@@ -8,6 +8,7 @@ import android.os.Process
 import android.text.TextUtils
 import cn.changjiahong.bamboo.BuildConfig
 import cn.changjiahong.bamboo.base.lan.LanguageManager
+import cn.changjiahong.bamboo.base.manager.ActivityStackManager
 import com.alibaba.android.arouter.launcher.ARouter
 import com.hzsoft.lib.log.KLog
 import java.io.BufferedReader
@@ -32,6 +33,10 @@ abstract class BambooApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         _context = this
+
+        // 注册ActivityStackManager
+        registerActivityLifecycleCallbacks(ActivityStackManager.instance)
+
         if (isMainProcess()) {
             initOnlyMainProcess()
         }

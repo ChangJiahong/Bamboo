@@ -86,7 +86,11 @@ dependencies {
 
     api("androidx.browser:browser:1.3.0")
 
+    api("com.afollestad.material-dialogs:core:3.3.0")
+    api("com.afollestad.material-dialogs:bottomsheets:3.3.0")
+    api("com.afollestad.material-dialogs:datetime:3.3.0")
 
+    implementation(libs.xxpermissions)
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.3")

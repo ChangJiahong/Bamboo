@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello_word">Hello World!</string>
+    <string name="add_device">添加设备</string>
 </resources>

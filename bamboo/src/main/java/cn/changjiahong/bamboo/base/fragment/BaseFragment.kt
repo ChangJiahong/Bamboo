@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import cn.changjiahong.bamboo.base.event_bus.Event
+import cn.changjiahong.bamboo.common.event_bus.Event
 import cn.changjiahong.bamboo.base.viewmodel.BaseViewModel
 import cn.changjiahong.bamboo.base.widget.toast.toast
 import cn.changjiahong.bamboo.common.IntPairs

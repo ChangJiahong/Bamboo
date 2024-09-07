@@ -54,3 +54,5 @@
   public static * inflate(android.view.LayoutInflater, android.view.ViewGroup, boolean);
   public static * bind(android.view.View);
 }
+
+-keep class androidx.core.app.CoreComponentFactory { *; }

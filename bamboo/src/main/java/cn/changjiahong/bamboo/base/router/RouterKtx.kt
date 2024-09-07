@@ -1,5 +1,8 @@
 package cn.changjiahong.bamboo.base.router
 
+import android.app.Activity
+import android.app.Service
+import android.content.ContextWrapper
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -120,3 +123,20 @@ private fun fillIntentArguments(aRouter: Postcard, params: Map<String, Any>) {
 }
 
 open class AnkoException(message: String = "") : RuntimeException(message)
+
+inline fun <reified T:Service> ContextWrapper.startService(makePairs: StringPairs<Any>.() -> Unit = {}){
+    val pairs = StringPairs<Any>()
+    pairs.makePairs()
+    val intent = Intent(this,T::class.java)
+    pairs.pairs.forEach { (key, value) ->
+        when (value) {
+            is String -> intent.putExtra(key, value)
+            is Int -> intent.putExtra(key, value)
+            is Long -> intent.putExtra(key, value)
+            is Double -> intent.putExtra(key, value)
+            is Float -> intent.putExtra(key, value)
+            is Bundle -> intent.putExtra(key, value)
+        }
+    }
+    startService(intent)
+}

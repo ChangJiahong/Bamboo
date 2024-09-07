@@ -1,4 +1,5 @@
 [versions]
+kotlin = "1.8.10"
 #groovy = "3.0.5"
 #checkstyle = "8.37"
 #compilesdk = "30"
@@ -42,6 +43,8 @@ arouter = "com.alibaba:arouter-api:1.5.2"
 arouter-compiler = "com.alibaba:arouter-compiler:1.5.2"
 
 gson = "com.google.code.gson:gson:2.8.5"
+
+xxpermissions = "com.github.getActivity:XXPermissions:15.0"
 
 retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
 retrofit_converter_moshi = "com.squareup.retrofit2:converter-moshi:2.9.0"
@@ -88,4 +91,5 @@ moshi = [
 ]
 
 [plugins]
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 #jmh = { id = "me.champeau.jmh", version = "0.6.5" }

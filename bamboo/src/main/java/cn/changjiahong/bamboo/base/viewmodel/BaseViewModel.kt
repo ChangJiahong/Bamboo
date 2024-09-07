@@ -3,7 +3,7 @@ package cn.changjiahong.bamboo.base.viewmodel
 import androidx.annotation.IdRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import cn.changjiahong.bamboo.base.event_bus.Event
+import cn.changjiahong.bamboo.common.event_bus.Event
 import cn.changjiahong.bamboo.base.router.export.IExportLoginService
 import cn.changjiahong.bamboo.base.router.provider
 import cn.changjiahong.bamboo.domain.ToastDomain

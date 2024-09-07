@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        tools:context=".app.main.fragments.devices.DevicesFragment">
+
+        <View
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/devices"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:text="@string/add_device"
+                android:textSize="20sp"
+                android:textColor="#121212"
+                app:drawableEndCompat="@drawable/baseline_arrow_drop_down_24" />
+
+
+        </LinearLayout>
+
+        <cn.changjiahong.bamboo.base.widget.FixFlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </cn.changjiahong.bamboo.base.widget.FixFlowLayout>
+
+
+    </LinearLayout>
+</layout>

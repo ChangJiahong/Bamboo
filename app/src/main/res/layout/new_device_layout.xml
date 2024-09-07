@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            drawableBuilderString='@{"conner=27;color=#F7F8FA"}'
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Device Name"
+                android:textColor="#323142"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/device_img"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/device"
+                app:layout_constraintBottom_toTopOf="@id/positive"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+            <TextView
+                android:id="@+id/negative"
+                drawableBuilderString='@{"conner=14;color=#E3E3E3"}'
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:text="取消"
+                android:textColor="#B1B1B1"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/positive"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:background="#E3E3E3" />
+
+            <TextView
+                android:id="@+id/positive"
+                drawableBuilderString='@{"conner=14;color=#141718"}'
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:text="连接设备"
+                android:textColor="#F3F5F6"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/negative"
+                tools:background="#141718" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

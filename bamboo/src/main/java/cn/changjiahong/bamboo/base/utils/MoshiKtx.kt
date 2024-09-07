@@ -38,7 +38,11 @@ object MoshiUtil {
     }
 
     fun <T> fromJson(json: String, type: Type): T? {
-        return moshi.adapter<T>(type).fromJson(json)
+        return try {
+            moshi.adapter<T>(type).fromJson(json)
+        } catch (e: Exception) {
+            return null
+        }
     }
 
 
